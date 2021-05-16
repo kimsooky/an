@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cumshort"
+    android:orientation="vertical"
+    tools:context=".BMI">
+    <!-- Text view for BMI Text -->
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="40dp"
+        android:text="BMI"
+        android:textAlignment="center"
+        android:textColor="@color/teal_700"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+    <!-- Textview for calculator text -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculator"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+    <!-- Textview for WEIGHT(KG) text -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:text="WEIGHT (KG)"
+        android:textAlignment="center"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
+    <!-- Edit text for entering weight with hint in kgs -->
+    <EditText
+        android:id="@+id/calcu"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="IN KGs"
+        android:inputType="numberDecimal"
+        android:textAlignment="center" />
+    <!-- Text view for HEIGHT(CM)text -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:text="HEIGHT (CM)"
+        android:textAlignment="center"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
+    <!-- Edit text for entering height with hint in cm -->
+    <EditText
+        android:id="@+id/calcear"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="IN CMs"
+        android:inputType="numberDecimal"
+        android:textAlignment="center" />
+    <!-- Button for calculating the formula, when pressed, with calculate written over it -->
+    <Button
+        android:id="@+id/calurater"
+        android:layout_width="158dp"
+        android:layout_height="51dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="#F3EFEF"
+        android:backgroundTint="#BBA5DF"
+        android:onClick="clickToCalculate"
+        android:text="Calculate"
+        android:textColor="#FBF8FA"
+        app:backgroundTint="@color/redvit" />
+
+</LinearLayout>
